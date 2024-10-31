@@ -1,0 +1,130 @@
+.red-text {
+  font-family: Pacifico;
+  color: red;
+  margin-top: 3rem;
+}
+
+.red-text span {
+  line-height: 150%;
+  font-size: 28px;
+}
+
+.green-text {
+  color: green;
+}
+
+.white-text {
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("http://santhosh.comxa.com/dsm/moonlight.jpg");
+}
+
+ul,
+li {
+  text-indent: 0;
+  text-decoration: none;
+  margin: 0;
+  padding: 0
+}
+
+img {
+  border: 0
+}
+
+body {
+  background-color: #000;
+  color: #999;
+  font: 100%/28px helvetica, arial, sans-serif
+}
+
+canvas {
+  cursor: crosshair;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 20
+}
+
+#bg img {
+  width: 100%;
+  height: 80%;
+}
+
+#bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10
+}
+
+#header {
+  top: 0
+}
+
+#bg {
+  position: fixed;
+  z-index: 1;
+  bottom: 0
+}
+
+audio {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5
+}
+
+.anime {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  animation: anim 1.5s infinite ease-in-out;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+.anime1 {
+  position: fixed;
+  top: 75%;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  animation: anim 1.5s infinite ease-in-out;
+  animation-delay: calc(0.5s * var(--i));
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tap-center {
+  font-size: 16px;
+  position: fixed;
+  bottom: 5%;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
